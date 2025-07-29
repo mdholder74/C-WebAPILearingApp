@@ -1,0 +1,6 @@
+@LearningLogAPI_HostAddress = http://localhost:5145
+
+GET {{LearningLogAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
