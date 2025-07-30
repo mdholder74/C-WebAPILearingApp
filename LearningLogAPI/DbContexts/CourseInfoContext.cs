@@ -23,7 +23,7 @@ namespace LearningLogAPI.DbContexts
                 OfficialDocsUrl = "https://angular.dev/installation",
                 LinkedInVideoUrl = "https://www.linkedin.com/learning/learning-angular-25357291/learning-angular?resume=false&u=262938922",
                 Review = "Great course! Clear explanations and practical examples. Helped me understand how Signals differ from RxJS.",
-                Tags = new List<string> { "angular", "setup", "cli", "environment" },
+                Tags = "angular,setup,cli,environment",
                 CodeSnippet = "ng new angular-app-name --routing",
                 Img = "favicon.ico"
             });
@@ -39,7 +39,7 @@ namespace LearningLogAPI.DbContexts
                 OfficialDocsUrl = "https://angular.dev/guide/components",
                 LinkedInVideoUrl = "https://www.linkedin.com/learning/learning-angular-25357291/learning-angular?resume=false&u=262938922",
                 Review = "Solid breakdown of component architecture. Loved the examples and visual explanations.",
-                Tags = new List<string> { "angular", "components", "architecture" },
+                Tags = "angular,components,architecture",
                 CodeSnippet = "ng new angular-app-name --no-standalone",
                 Img = "favicon.ico"
             });
@@ -55,7 +55,7 @@ namespace LearningLogAPI.DbContexts
                 OfficialDocsUrl = "https://angular.dev/guide/ngmodules/overview",
                 LinkedInVideoUrl = "https://www.linkedin.com/learning/learning-angular-25357291/learning-angular?resume=false&u=262938922",
                 Review = "Helped me understand when to use standalone components and how they simplify module management.",
-                Tags = new List<string> { "angular", "standalone", "modules" },
+                Tags = "angular,standalone,modules",
                 CodeSnippet = "ng new angular-app-name --routing",
                 Img = "favicon.ico"
             });
@@ -71,7 +71,7 @@ namespace LearningLogAPI.DbContexts
                 OfficialDocsUrl = "https://angular.dev/guide/templates/binding",
                 LinkedInVideoUrl = "https://www.linkedin.com/learning/learning-angular-25357291/learning-angular?resume=false&u=262938922",
                 Review = "Covers all titles of binding clearly—property, event, and two-way.",
-                Tags = new List<string> { "angular", "binding", "data" },
+                Tags = "angular,binding,data",
                 CodeSnippet = "<[src]=\"imageUrl\" (click)=\"onClick()\">",
                 Img = "favicon.ico"
             });
@@ -87,7 +87,7 @@ namespace LearningLogAPI.DbContexts
                 OfficialDocsUrl = "https://angular.dev/guide/di",
                 LinkedInVideoUrl = "https://www.linkedin.com/learning/learning-angular-25357291/learning-angular?resume=false&u=262938922",
                 Review = "DI is powerful once you understand providers and injectors.",
-                Tags = new List<string> { "angular", "di", "services" },
+                Tags = "angular,di,services",
                 CodeSnippet = "constructor(private http: HttpClient) {}",
                 Img = "favicon.ico"
             });
@@ -103,7 +103,7 @@ namespace LearningLogAPI.DbContexts
                 OfficialDocsUrl = "https://angular.dev/guide/http/making-requests#http-observables",
                 LinkedInVideoUrl = "https://www.linkedin.com/learning/learning-angular-25357291/learning-angular?resume=false&u=262938922",
                 Review = "This course provides a solid foundation in using Observables within Angular. The explanations are clear, and the examples are practical, especially the sections on HTTP requests and reactive forms. ",
-                Tags = new List<string> { "angular", "observables", "architecture" },
+                Tags = "angular,observables,architecture",
                 CodeSnippet = "getCourses(): Observable<Course[]> {}",
                 Img = "favicon.ico"
             });
@@ -119,7 +119,7 @@ namespace LearningLogAPI.DbContexts
                 OfficialDocsUrl = "https://www.titlescriptlang.org/docs/handbook/interfaces.html",
                 LinkedInVideoUrl = "https://www.linkedin.com/learning/learning-angular-25357291/learning-angular?resume=false&u=262938922",
                 Review = "Interfaces help enforce structure and improve title safety.",
-                Tags = new List<string> { "titlescript", "interfaces", "typing" },
+                Tags = "titlescript,interfaces,typing",
                 CodeSnippet = "interface Course { title: string; duration: string; }",
                 Img = "favicon.ico"
             });
@@ -135,7 +135,7 @@ namespace LearningLogAPI.DbContexts
                 OfficialDocsUrl = "https://angular.dev/guide/routing",
                 LinkedInVideoUrl = "https://www.linkedin.com/learning/learning-angular-25357291/learning-angular?resume=false&u=262938922",
                 Review = "Routing was tricky at first, but guards and lazy loading made it click.",
-                Tags = new List<string> { "angular", "routing", "navigation" },
+                Tags = "angular,routing,navigation",
                 CodeSnippet = "path: 'dashboard', component: DashboardComponent",
                 Img = "favicon.ico"
             });
@@ -151,7 +151,7 @@ namespace LearningLogAPI.DbContexts
                 OfficialDocsUrl = "https://angular.dev/guide/forms",
                 LinkedInVideoUrl = "https://www.linkedin.com/learning/learning-angular-25357291/learning-angular?resume=false&u=262938922",
                 Review = "Reactive forms are powerful for validation and dynamic controls.",
-                Tags = new List<string> { "angular", "forms", "reactive" },
+                Tags = "angular,forms,reactive",
                 CodeSnippet = "this.form = new FormGroup({ name: new FormControl('') });",
                 Img = "favicon.ico"
             });
@@ -167,7 +167,7 @@ namespace LearningLogAPI.DbContexts
                 OfficialDocsUrl = "https://rxjs.dev/guide/operators",
                 LinkedInVideoUrl = "https://www.linkedin.com/learning/learning-angular-25357291/learning-angular?resume=false&u=262938922",
                 Review = "RxJS is a beast, but once you get map, mergeMap, and switchMap, it’s 🔥.",
-                Tags = new List<string> { "rxjs", "observables", "operators" },
+                Tags = "rxjs,observables,operators",
                 CodeSnippet = "source$.pipe(map(val => val * 2))",
                 Img = "favicon.ico"
             });
@@ -183,7 +183,7 @@ namespace LearningLogAPI.DbContexts
                 OfficialDocsUrl = "https://angular.dev/guide/testing",
                 LinkedInVideoUrl = "https://www.linkedin.com/learning/learning-angular-25357291/learning-angular?resume=false&u=262938922",
                 Review = "Unit testing with Jasmine and Karma was easier than expected. Debugging tips were gold.",
-                Tags = new List<string> { "angular", "testing", "debugging" },
+                Tags = "angular,testing,debugging",
                 CodeSnippet = "expect(component.title).toEqual('MyApp')",
                 Img = "favicon.ico"
             });
@@ -199,7 +199,7 @@ namespace LearningLogAPI.DbContexts
                 OfficialDocsUrl = "https://angular.io/",
                 LinkedInVideoUrl = "https://www.linkedin.com/learning/learning-angular-25357291/learning-angular?resume=false&u=262938922",
                 Review = "A fun wrap-up of random but useful Angular tricks.",
-                Tags = new List<string> { "angular", "extras", "tips" },
+                Tags = "angular,extras,tips",
                 CodeSnippet = "<img [src]=\"imageUrl\"> {{ birthday | date:'longDate' }}",
                 Img = "favicon.ico"
             });

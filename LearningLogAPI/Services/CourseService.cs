@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
-using LearningLog.API.DbContexts;
-using LearningLog.API.Dtos;
-using LearningLog.API.Entities;
+using LearningLogAPI.DbContexts;
+using LearningLogAPI.Dtos;
+using LearningLogAPI.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace LearningLogAPI.Services

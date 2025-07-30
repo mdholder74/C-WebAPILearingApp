@@ -1,11 +1,12 @@
 
 using AutoMapper;
 using LearningLogAPI.DbContexts;
+using LearningLogAPI.Profiles;
 using LearningLogAPI.Services;
 using Microsoft.AspNetCore.Cors.Infrastructure;
 using Microsoft.EntityFrameworkCore;
-using System;
-using LearningLog.API.Services;
+using Microsoft.Extensions.DependencyInjection;
+
 
 
 namespace LearningLogAPI
@@ -26,7 +27,9 @@ namespace LearningLogAPI
             builder.Services.AddControllers();
 
             //This tells AutoMapper to find all profiles (like CourseProfile) in the current project and register them.
-            builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+            builder.Services.AddAutoMapper(cfg => {
+                cfg.AddProfile<LearningLogAPI.Profiles.CourseProfile>();
+            });
 
             // Register your CourseService for DI
             builder.Services.AddScoped<ICourseService, CourseService>();

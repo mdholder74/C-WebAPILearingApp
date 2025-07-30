@@ -11,7 +11,7 @@
         public string OfficialDocsUrl { get; set; } = string.Empty;
         public string LinkedInVideoUrl { get; set; } = string.Empty;
         public string Review { get; set; } = string.Empty;
-        public List<string> Tags { get; set; } = new List<string>();//May cause issues if not handled properly
+        public string Tags { get; set; } = string.Empty;//May cause issues if not handled properly. public List<string> Tags { get; set; } = new List<string>();
         public string CodeSnippet { get; set; } = string.Empty;
         public string Img { get; set; } = string.Empty;
         public bool IsFavoritedByCurrentUser { get; set; }
